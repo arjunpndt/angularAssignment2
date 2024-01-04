@@ -1,6 +1,20 @@
-<app-game-control (updateDta)="pushValue($event)"></app-game-control>
-<h4>Odd Numbers</h4>
-<app-odd *ngFor="let oddNum of oddNumArr" [oddnum]="oddNum"></app-odd>
-<h4>Even Numbers</h4>
-<app-even *ngFor="let evenNum of evenNumArr" [evennum]="evenNum"></app-even>
-<button (click)="changeItem()">Change Item</button>
+<div class="container text-center">
+  <div class="row">
+    <div class="col">
+      <app-game-control (updateDta)="pushValue($event)"></app-game-control>
+    </div>
+  </div>
+  <div class="row text-center">
+    <div class="col">
+      <h2><b>Odd Numbers</b></h2>
+      <app-odd *ngFor="let oddNum of oddNumArr" [oddnum]="oddNum"></app-odd>
+    </div>
+    <div class="col">
+      <h2><b>Even Numbers</b></h2>
+      <app-even
+        *ngFor="let evenNum of evenNumArr"
+        [evennum]="evenNum"
+      ></app-even>
+    </div>
+  </div>
+</div>

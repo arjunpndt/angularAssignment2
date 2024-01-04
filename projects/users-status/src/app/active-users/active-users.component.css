@@ -1,0 +1,11 @@
+@import url(../../../../../node_modules/bootstrap/dist/css/bootstrap.min.css);
+/* * {
+  list-style-type: none;
+} */
+
+.card-subtitle {
+  margin: 0.3rem;
+}
+/* .btn {
+  background-color: rgb(255, 48, 48);
+} */

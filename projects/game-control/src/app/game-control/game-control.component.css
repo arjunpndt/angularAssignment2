@@ -1,0 +1,8 @@
+@import url(../../../../../node_modules/bootstrap/dist/css/bootstrap.min.css);
+.row {
+  margin: 0.5rem;
+}
+
+.container {
+  width: 50rem;
+}

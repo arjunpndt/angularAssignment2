@@ -1,11 +1,23 @@
-<div>
-  <h3>Inactive Users</h3>
-  <ol>
-    <span *ngFor="let user of userList">
-      <li *ngIf="user.status == 'inactive'">
-        {{ user.name }} |
-        <button (click)="updateStatus(user)">Set To Active</button>
-      </li>
-    </span>
-  </ol>
+<div class="card">
+  <h2><b>Inactive Users</b></h2>
+  <span *ngFor="let user of userList">
+    <div class="card-text" *ngIf="user.status == 'inactive'">
+      <div class="card-subtitle">
+        <div class="row">
+          <div class="col">
+            <b>{{ user.name }}</b>
+          </div>
+          <div class="col">
+            <button
+              type="button"
+              class="btn btn-info btn-sm"
+              (click)="updateStatus(user)"
+            >
+              Set To Active
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </span>
 </div>

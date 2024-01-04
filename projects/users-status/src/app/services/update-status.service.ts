@@ -8,11 +8,11 @@ export class UpdateStatusService {
   data: [string] = ['arjun'];
   // users: User[] = [];
   users: User[] = [
-    new User('Arjun', 'active'),
-    new User('Rama', 'inactive'),
-    new User('Ankit', 'inactive'),
-    new User('Prince', 'inactive'),
-    new User('Aman', 'active'),
+    new User('Arjun Pandit  ', 'active'),
+    new User('Atul Sharma', 'inactive'),
+    new User('Aniket Sharma', 'inactive'),
+    new User('Priya Vats', 'inactive'),
+    new User('Vibhu Mishra', 'active'),
   ];
   getAllUsers = () => {
     return this.users;
