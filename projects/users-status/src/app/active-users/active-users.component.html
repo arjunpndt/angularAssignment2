@@ -1,0 +1,11 @@
+<div>
+  <h3>Active Users</h3>
+  <ol>
+    <span *ngFor="let user of userList">
+      <li *ngIf="user.status == 'active'">
+        {{ user.name }} |
+        <button (click)="updateStatus(user)">Set To Inactive</button>
+      </li>
+    </span>
+  </ol>
+</div>
